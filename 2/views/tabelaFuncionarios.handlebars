@@ -1,0 +1,21 @@
+      <h2>Funcionários</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Áreas</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each funcionarios}}
+            <tr>
+              <td>{{id}}</td>
+              <td>{{nome}} {{sobrenome}}</td>
+              <td>{{nomeArea}}</td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
